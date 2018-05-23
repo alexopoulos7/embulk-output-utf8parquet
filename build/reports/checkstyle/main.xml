@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.14.1">
+<file name="/Users/angelosalexopoulos/Desktop/Upwork/work/DataPlatform/embulk-output-utf8parquet/src/main/java/org/embulk/output/EmbulkWriteSupport.java">
+</file>
+<file name="/Users/angelosalexopoulos/Desktop/Upwork/work/DataPlatform/embulk-output-utf8parquet/src/main/java/org/embulk/output/EmbulkWriterBuilder.java">
+</file>
+<file name="/Users/angelosalexopoulos/Desktop/Upwork/work/DataPlatform/embulk-output-utf8parquet/src/main/java/org/embulk/output/ParquetOutputPlugin.java">
+</file>
+</checkstyle>
