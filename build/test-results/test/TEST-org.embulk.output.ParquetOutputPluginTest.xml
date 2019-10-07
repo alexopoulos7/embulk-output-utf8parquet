@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.embulk.output.ParquetOutputPluginTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-28T05:55:29" hostname="Angeloss-MBP" time="2.932">
+<testsuite name="org.embulk.output.ParquetOutputPluginTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-07T05:42:18" hostname="Angeloss-MBP" time="15.272">
   <properties/>
-  <testcase name="checkColumnsRequired" classname="org.embulk.output.ParquetOutputPluginTest" time="0.046"/>
-  <testcase name="checkExtraConfigurations" classname="org.embulk.output.ParquetOutputPluginTest" time="0.243"/>
-  <testcase name="checkDefaultValues" classname="org.embulk.output.ParquetOutputPluginTest" time="0.007"/>
+  <testcase name="checkColumnsRequired" classname="org.embulk.output.ParquetOutputPluginTest" time="12.145"/>
+  <testcase name="checkExtraConfigurations" classname="org.embulk.output.ParquetOutputPluginTest" time="1.937"/>
+  <testcase name="checkDefaultValues" classname="org.embulk.output.ParquetOutputPluginTest" time="1.19"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

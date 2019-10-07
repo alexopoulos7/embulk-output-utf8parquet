@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "embulk-output-utf8parquet"
-  spec.version       = "1.0.2"
+  spec.version       = "1.0.3"
   spec.authors       = ["Angelos Alexopoulos"]
   spec.summary       = %[Parquet output plugin for Embulk with UTF8 support]
   spec.description   = %[Parquet output plugin is an Embulk plugin that loads records to Parquet read by any input plugins. Search the input plugins by "embulk-input" keyword.]

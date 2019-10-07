@@ -135,7 +135,10 @@ public class EmbulkWriteSupport
         @Override
         public void jsonColumn(Column column)
         {
-            throw new UnsupportedOperationException("This plugin doesn't support json type. Please try to upgrade version of the plugin using 'embulk gem update' command. If the latest version still doesn't support json type, please contact plugin developers, or change configuration of input plugin not to use json type.");
+            if (!record.isNull(column)) {
+            consumer.addBinary(Binary.fromString(record.getString(column)));
+            }
+            // throw new UnsupportedOperationException("This plugin doesn't support json type. Please try to upgrade version of the plugin using 'embulk gem update' command. If the latest version still doesn't support json type, please contact plugin developers, or change configuration of input plugin not to use json type.");
         }
 
         @Override
@@ -181,7 +184,8 @@ public class EmbulkWriteSupport
         @Override
         public void jsonColumn(Column column)
         {
-            throw new UnsupportedOperationException("This plugin doesn't support json type. Please try to upgrade version of the plugin using 'embulk gem update' command. If the latest version still doesn't support json type, please contact plugin developers, or change configuration of input plugin not to use json type.");
+            fields.add(new PrimitiveType(Type.Repetition.OPTIONAL, PrimitiveTypeName.BINARY, column.getName()));
+            // throw new UnsupportedOperationException("This plugin doesn't support json type. Please try to upgrade version of the plugin using 'embulk gem update' command. If the latest version still doesn't support json type, please contact plugin developers, or change configuration of input plugin not to use json type.");
         }
 
         @Override
