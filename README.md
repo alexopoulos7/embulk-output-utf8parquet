@@ -1,8 +1,8 @@
 # UTF8Parquet output plugin for Embulk
 ** This is actually a clone of https://github.com/choplin/embulk-output-parquet/
 
-We have added support for UTF-8 instead of binary fields
-
+* We have added support for UTF-8 instead of binary fields.
+* It converts json objects to string parquet format.
 
 ## Overview
 
