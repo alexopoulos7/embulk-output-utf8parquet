@@ -136,7 +136,7 @@ public class EmbulkWriteSupport
         public void jsonColumn(Column column)
         {
             if (!record.isNull(column)) {
-            consumer.addBinary(Binary.fromString(record.getString(column)));
+                consumer.addBinary(Binary.fromString(record.getJson(column).toString()));
             }
             // throw new UnsupportedOperationException("This plugin doesn't support json type. Please try to upgrade version of the plugin using 'embulk gem update' command. If the latest version still doesn't support json type, please contact plugin developers, or change configuration of input plugin not to use json type.");
         }
@@ -207,6 +207,12 @@ public class EmbulkWriteSupport
         public void stringColumn(Column column)
         {
             fields.add(new PrimitiveType(Type.Repetition.OPTIONAL, PrimitiveTypeName.BINARY, column.getName(), OriginalType.UTF8));
+        }
+
+        @Override
+        public void jsonColumn(Column column)
+        {
+             fields.add(new PrimitiveType(Type.Repetition.OPTIONAL, PrimitiveTypeName.BINARY, column.getName(), OriginalType.UTF8));
         }
 
         @Override
